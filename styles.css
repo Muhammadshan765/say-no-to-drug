@@ -2487,4 +2487,84 @@ section:nth-child(odd) {
     .image-overlay p {
         font-size: 0.9rem;
     }
+}
+
+/* Infinite Moving Cards Styles */
+#moving-cards {
+    overflow: hidden;
+    position: relative;
+}
+
+.moving-cards-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.moving-cards-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.moving-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    min-width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.moving-card:hover {
+    transform: translateY(-10px);
+}
+
+.moving-card .card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.moving-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.moving-card p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-280px * 4 - 20px * 4));
+    }
+}
+
+/* Pause animation on hover */
+.moving-cards-container:hover .moving-cards-track {
+    animation-play-state: paused;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .moving-card {
+        min-width: 240px;
+        padding: 20px;
+    }
+
+    .moving-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .moving-card .card-icon {
+        font-size: 2rem;
+    }
 } 
