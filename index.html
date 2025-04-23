@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say No to Drugs - Choose Life</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add after the head section -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Add after the head section -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828665.png">
+    <meta property="og:title" content="Say No to Drugs - Choose Life">
+    <meta property="og:description" content="Join our campaign against drug abuse. Your voice can change a life.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-hand-holding-heart me-2"></i>Say No to Drugs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">
+                            <i class="fas fa-graduation-cap me-2"></i>Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">
+                            <i class="fas fa-book-open me-2"></i>Stories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz">
+                            <i class="fas fa-question-circle me-2"></i>Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pledge">
+                            <i class="fas fa-handshake me-2"></i>Take Pledge
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add after the navigation -->
+    <div class="language-switch">
+        <button class="language-btn" id="languageToggle">
+            <i class="fas fa-globe"></i> EN
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero curved-section">
+        <div class="hero-carousel">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="hero-slide" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCevA_rklBCRhfzvLqYVoT8Dd_kDZCtGucBA&s')">
+                            <div class="hero-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="200">
+                                        <h1 class="display-3 fw-bold text-white animate-text">Your Future is Worth More Than a Temporary High</h1>
+                                        <p class="lead text-white animate-text" data-aos-delay="400">Make the right choice. Choose life over drugs.</p>
+                                        <div class="mt-4 animate-buttons" data-aos-delay="600">
+                                            <button class="btn btn-primary btn-lg me-3 pulse" data-bs-toggle="modal" data-bs-target="#pledgeModal">Take the Pledge</button>
+                                            <button class="btn btn-outline-light btn-lg">Watch Stories</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-slide" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWy5DelPip1uKKe8xnrvVLN9kPqYU3aPtDnQ&s')">
+                            <div class="hero-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="200">
+                                        <h1 class="display-3 fw-bold text-white animate-text typing-text">Choose Life, Choose Hope</h1>
+                                        <p class="lead text-white animate-text fade-in-text" data-aos-delay="400">Every day is a new opportunity for a better life.</p>
+                                        <div class="mt-4 animate-buttons" data-aos-delay="600">
+                                            <button class="btn btn-primary btn-lg me-3 pulse" data-bs-toggle="modal" data-bs-target="#pledgeModal">Join the Movement</button>
+                                            <button class="btn btn-outline-light btn-lg">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
+                            <div class="hero-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="200">
+                                        <h1 class="display-3 fw-bold text-white animate-text slide-in-text">Together We Can Make a Difference</h1>
+                                        <p class="lead text-white animate-text fade-in-text" data-aos-delay="400">Your story can inspire others to choose a better path.</p>
+                                        <div class="mt-4 animate-buttons" data-aos-delay="600">
+                                            <button class="btn btn-primary btn-lg me-3 pulse" data-bs-toggle="modal" data-bs-target="#pledgeModal">Share Your Story</button>
+                                            <button class="btn btn-outline-light btn-lg">Get Help</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="lottie-container">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_4aahfj2k.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></lottie-player>
+        </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">
+                <i class="fas fa-graduation-cap me-2"></i>Understanding the Impact
+            </h2>
+            
+            <!-- Types of Drugs Card -->
+            <div class="education-box mb-5" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="box-image">
+                            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Types of Drugs">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="box-content">
+                            <h3 class="decrypt-text"><i class="fas fa-pills me-2"></i>Types of Drugs & Their Effects</h3>
+                            <div class="drug-types">
+                                <div class="drug-type">
+                                    <h4 class="decrypt-text"><i class="fas fa-bolt me-2"></i>Stimulants</h4>
+                                    <div class="side-effects">
+                                        <div class="effect-category">
+                                            <h5 class="decrypt-text"><i class="fas fa-heartbeat me-2"></i>Physical Effects</h5>
+                                            <ul>
+                                                <li class="decrypt-text"><i class="fas fa-arrow-up me-2"></i>Increased heart rate and blood pressure</li>
+                                                <li class="decrypt-text"><i class="fas fa-thermometer-half me-2"></i>Elevated body temperature</li>
+                                                <li class="decrypt-text"><i class="fas fa-utensils me-2"></i>Reduced appetite</li>
+                                                <li class="decrypt-text"><i class="fas fa-moon me-2"></i>Insomnia and sleep disturbances</li>
+                                            </ul>
+                                        </div>
+                                        <div class="effect-category">
+                                            <h5 class="decrypt-text"><i class="fas fa-brain me-2"></i>Mental Effects</h5>
+                                            <ul>
+                                                <li class="decrypt-text"><i class="fas fa-exclamation-triangle me-2"></i>Anxiety and paranoia</li>
+                                                <li class="decrypt-text"><i class="fas fa-angry me-2"></i>Aggressive behavior</li>
+                                                <li class="decrypt-text"><i class="fas fa-random me-2"></i>Mood swings</li>
+                                                <li class="decrypt-text"><i class="fas fa-sad-tear me-2"></i>Depression when effects wear off</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drug-type">
+                                    <h4 class="decrypt-text"><i class="fas fa-bed me-2"></i>Depressants</h4>
+                                    <div class="side-effects">
+                                        <div class="effect-category">
+                                            <h5 class="decrypt-text"><i class="fas fa-heartbeat me-2"></i>Physical Effects</h5>
+                                            <ul>
+                                                <li class="decrypt-text"><i class="fas fa-tachometer-alt me-2"></i>Slowed breathing and heart rate</li>
+                                                <li class="decrypt-text"><i class="fas fa-tired me-2"></i>Drowsiness and fatigue</li>
+                                                <li class="decrypt-text"><i class="fas fa-walking me-2"></i>Poor coordination</li>
+                                                <li class="decrypt-text"><i class="fas fa-lungs me-2"></i>Risk of respiratory failure</li>
+                                            </ul>
+                                        </div>
+                                        <div class="effect-category">
+                                            <h5 class="decrypt-text"><i class="fas fa-brain me-2"></i>Mental Effects</h5>
+                                            <ul>
+                                                <li class="decrypt-text"><i class="fas fa-question-circle me-2"></i>Confusion and memory problems</li>
+                                                <li class="decrypt-text"><i class="fas fa-sad-tear me-2"></i>Depression</li>
+                                                <li class="decrypt-text"><i class="fas fa-exclamation-circle me-2"></i>Impaired judgment</li>
+                                                <li class="decrypt-text"><i class="fas fa-car-crash me-2"></i>Increased risk of accidents</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Impact Card -->
+            <div class="education-box mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="box-image">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Health Impact">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="box-content">
+                            <h3 class="decrypt-text"><i class="fas fa-heartbeat me-2"></i>Health Impact & Consequences</h3>
+                            <div class="health-impact">
+                                <div class="impact-category">
+                                    <h4 class="decrypt-text"><i class="fas fa-heart me-2"></i>Physical Health</h4>
+                                    <ul>
+                                        <li class="decrypt-text"><i class="fas fa-lungs me-2"></i>Organ damage (liver, heart, brain)</li>
+                                        <li class="decrypt-text"><i class="fas fa-shield-virus me-2"></i>Weakened immune system</li>
+                                        <li class="decrypt-text"><i class="fas fa-procedures me-2"></i>Chronic health conditions</li>
+                                        <li class="decrypt-text"><i class="fas fa-virus me-2"></i>Increased risk of infectious diseases</li>
+                                        <li class="decrypt-text"><i class="fas fa-apple-alt me-2"></i>Nutritional deficiencies</li>
+                                    </ul>
+                                </div>
+                                <div class="impact-category">
+                                    <h4 class="decrypt-text"><i class="fas fa-brain me-2"></i>Mental Health</h4>
+                                    <ul>
+                                        <li class="decrypt-text"><i class="fas fa-anxiety me-2"></i>Anxiety disorders</li>
+                                        <li class="decrypt-text"><i class="fas fa-sad-tear me-2"></i>Depression</li>
+                                        <li class="decrypt-text"><i class="fas fa-head-side-virus me-2"></i>Psychosis</li>
+                                        <li class="decrypt-text"><i class="fas fa-memory me-2"></i>Memory problems</li>
+                                        <li class="decrypt-text"><i class="fas fa-user-edit me-2"></i>Personality changes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prevention & Awareness Card -->
+            <div class="education-box mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="box-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prevention">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="box-content">
+                            <h3 class="decrypt-text"><i class="fas fa-shield-alt me-2"></i>Prevention & Awareness</h3>
+                            <div class="prevention-info">
+                                <div class="prevention-category">
+                                    <h4 class="decrypt-text"><i class="fas fa-graduation-cap me-2"></i>Prevention Strategies</h4>
+                                    <ul>
+                                        <li class="decrypt-text"><i class="fas fa-book me-2"></i>Education about risks and consequences</li>
+                                        <li class="decrypt-text"><i class="fas fa-users me-2"></i>Building strong support networks</li>
+                                        <li class="decrypt-text"><i class="fas fa-hands-helping me-2"></i>Developing healthy coping mechanisms</li>
+                                        <li class="decrypt-text"><i class="fas fa-user-shield me-2"></i>Setting clear personal boundaries</li>
+                                        <li class="decrypt-text"><i class="fas fa-running me-2"></i>Engaging in positive activities</li>
+                                    </ul>
+                                </div>
+                                <div class="prevention-category">
+                                    <h4 class="decrypt-text"><i class="fas fa-exclamation-triangle me-2"></i>Warning Signs</h4>
+                                    <ul>
+                                        <li class="decrypt-text"><i class="fas fa-user-edit me-2"></i>Changes in behavior or personality</li>
+                                        <li class="decrypt-text"><i class="fas fa-chart-line-down me-2"></i>Decline in performance</li>
+                                        <li class="decrypt-text"><i class="fas fa-user-injured me-2"></i>Physical changes</li>
+                                        <li class="decrypt-text"><i class="fas fa-money-bill-wave me-2"></i>Financial problems</li>
+                                        <li class="decrypt-text"><i class="fas fa-user-minus me-2"></i>Social withdrawal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Stories Section -->
+    <section id="stories" class="py-5 curved-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-book-open icon"></i>
+            <h2 class="text-center mb-5" data-aos="fade-up">Real Stories of Recovery</h2>
+            
+            <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#storiesCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#storiesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#storiesCarousel" data-bs-slide-to="2"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="story-card">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Recovery Story" class="story-image">
+                            <div class="story-content">
+                                <h3>John's Journey</h3>
+                                <p>"After 5 years of addiction, I found the strength to change my life. Today, I'm 3 years sober and helping others."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="story-card">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Recovery Story" class="story-image">
+                            <div class="story-content">
+                                <h3>Sarah's Story</h3>
+                                <p>"Recovery wasn't easy, but it was worth it. I've rebuilt my relationships and found new purpose in life."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="story-card">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Recovery Story" class="story-image">
+                            <div class="story-content">
+                                <h3>Mike's Message</h3>
+                                <p>"If I can do it, so can you. Reach out for help - it's the first step towards a better life."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#storiesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#storiesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Trial Section -->
+    <section id="image-trial" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Image Gallery</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="image-trial-card">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Recovery Image" class="img-fluid">
+                        </div>
+                        <div class="image-overlay">
+                            <h4>Journey to Recovery</h4>
+                            <p>Inspiring stories of transformation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="image-trial-card">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Support Image" class="img-fluid">
+                        </div>
+                        <div class="image-overlay">
+                            <h4>Community Support</h4>
+                            <p>Together we can make a difference</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-trial-card">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Hope Image" class="img-fluid">
+                        </div>
+                        <div class="image-overlay">
+                            <h4>Hope & Healing</h4>
+                            <p>Every day is a new beginning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Myth vs Fact Section -->
+    <section id="myth-fact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Myth vs Fact</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="myth-fact-card">
+                        <div class="card-front">
+                            <div class="icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <h3>Myth</h3>
+                            <p>"Drugs make you cool"</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Fact</h3>
+                            <p>Drugs ruin your health, relationships, and future prospects.</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="myth-fact-card">
+                        <div class="card-front">
+                            <div class="icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <h3>Myth</h3>
+                            <p>"I can quit anytime"</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Fact</h3>
+                            <p>Addiction changes brain chemistry, making it extremely difficult to quit without help.</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="myth-fact-card">
+                        <div class="card-front">
+                            <div class="icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <h3>Myth</h3>
+                            <p>"Drugs help with stress"</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Fact</h3>
+                            <p>Drugs create more problems than they solve, leading to increased stress and anxiety.</p>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Hover to flip
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">The Impact of Our Movement</h2>
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="counter" data-target="10000">0</h3>
+                        <p>People Pledged</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="counter" data-target="5000">0</h3>
+                        <p>Stories Shared</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="counter" data-target="20000">0</h3>
+                        <p>People Educated</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="counter" data-target="1000">0</h3>
+                        <p>Lives Changed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section id="quiz" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Test Your Knowledge</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quiz-container" data-aos="zoom-in">
+                        <div class="quiz-header">
+                            <div class="quiz-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <span class="question-count">Question <span id="current-question">1</span>/5</span>
+                            </div>
+                            <div class="quiz-score">
+                                <i class="fas fa-star"></i>
+                                <span id="score">0</span>
+                            </div>
+                        </div>
+                        <div class="quiz-content">
+                            <div class="question active">
+                                <h3 class="question-text">What is the first sign of drug addiction?</h3>
+                                <div class="options">
+                                    <div class="option" data-correct="true">
+                                        <div class="option-content">
+                                            <div class="option-icon">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <span class="option-text">Withdrawal from social activities</span>
+                                        </div>
+                                        <div class="option-feedback">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="option" data-correct="false">
+                                        <div class="option-content">
+                                            <div class="option-icon">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <span class="option-text">Regular exercise</span>
+                                        </div>
+                                        <div class="option-feedback">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="option" data-correct="false">
+                                        <div class="option-content">
+                                            <div class="option-icon">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <span class="option-text">Healthy eating habits</span>
+                                        </div>
+                                        <div class="option-feedback">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-actions">
+                            <button class="btn btn-primary" id="next-question" disabled>
+                                <span class="btn-text">Next Question</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-download icon"></i>
+                <h2 class="text-center mb-5" data-aos="fade-up">Download Resources</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="resource-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <h3>Pledge Card</h3>
+                        <p>Take the pledge to say no to drugs</p>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="resource-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Awareness Guide</h3>
+                        <p>Comprehensive guide to drug awareness</p>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="resource-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Health Effects</h3>
+                        <p>Infographics on drug effects</p>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="resource-card">
+                        <div class="card-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h3>Help Checklist</h3>
+                        <p>How to help a friend in need</p>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pledge Modal -->
+    <div class="modal fade" id="pledgeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Take the Pledge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="pledgeForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your message of commitment"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">I Pledge to Say NO to Drugs</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Help Section -->
+    <section id="emergency" class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="display-4 mb-4">Need Immediate Help?</h2>
+                    <p class="lead mb-4">If you or someone you know is struggling with addiction, help is available 24/7.</p>
+                    <button class="btn btn-light btn-lg pulse" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+                        <i class="fas fa-phone-alt me-2"></i>Get Help Now
+                    </button>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="emergency-card tilt">
+                        <div class="card-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Professional help is just a call away</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Section -->
+    <section id="share" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Spread the Message</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="share-card" data-aos="zoom-in">
+                        <h3>Share This Campaign</h3>
+                        <p>Help us reach more people by sharing this message</p>
+                        <div class="social-share">
+                            <button class="btn btn-facebook">
+                                <i class="fab fa-facebook-f"></i> Share
+                            </button>
+                            <button class="btn btn-twitter">
+                                <i class="fab fa-twitter"></i> Tweet
+                            </button>
+                            <button class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Modal -->
+    <div class="modal fade" id="emergencyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Emergency Help</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="emergency-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h6>National Helpline</h6>
+                                <p>1-800-662-HELP (4357)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-comment"></i>
+                            <div>
+                                <h6>Crisis Text Line</h6>
+                                <p>Text HOME to 741741</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-ambulance"></i>
+                            <div>
+                                <h6>Emergency Services</h6>
+                                <p>911</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="btn btn-theme" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
